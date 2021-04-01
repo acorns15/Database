@@ -7,7 +7,7 @@ INSERT INTO TBinformation1 (
         ) /*setting parameters where the data is stored*/
     VALUES (
         5,
-        'Jess Dales Dela Cruz Sr.',
+        'Jess Dales Dela Cruz Jr.',
         '06-29-2020',
         1,
         300
