@@ -1,16 +1,9 @@
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE TABLE [dbo].[TBinformation1](
-	[IDinformation1] [int] NOT NULL,
-	[FullName] [varchar](100) NOT NULL,
+CREATE TABLE TBinformation1 (
+	IDinformation1 INT NOT NULL PRIMARY KEY,
+		/*Add primary key to the IDinformation1*/
+	FullName varchar(100) NOT NULL,
 	[Birthday] [date] NULL,
 	[IsActive] [bit] NULL,
 	[Allowance] [decimal](18, 0) NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[IDinformation1] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
+); /*ignore NOT NULL Function*/
 GO
