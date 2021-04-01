@@ -1,0 +1,18 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TBinformation3](
+	[IDinformation3] [int] NOT NULL,
+	[Salary] [int] NULL,
+ CONSTRAINT [TBinfomration3] PRIMARY KEY CLUSTERED 
+(
+	[IDinformation3] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[TBinformation3]  WITH CHECK ADD  CONSTRAINT [FK_TBinfomration3_TBinformation2] FOREIGN KEY([IDinformation3])
+REFERENCES [dbo].[TBinformation2] ([IDinformation2])
+GO
+ALTER TABLE [dbo].[TBinformation3] CHECK CONSTRAINT [FK_TBinfomration3_TBinformation2]
+GO
