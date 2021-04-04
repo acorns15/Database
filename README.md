@@ -1,6 +1,6 @@
 # Database
 
-GO to www.w3schools.com/sql
+GO to www.w3schools.com/sql or www.sqlservertutorial.net
   if you don't know the basic query functions
 
 Open folders to find my own queries of our activities
