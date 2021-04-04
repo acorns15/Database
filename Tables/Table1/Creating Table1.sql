@@ -1,0 +1,7 @@
+CREATE TABLE Table1 (
+    CustID1 INT NOT NULL IDENTITY (1,1),
+    Name VARCHAR(100),
+    City VARCHAR(100),
+    Type CHAR (10),
+    CONSTRAINT PK_Table1 PRIMARY KEY (CustID1)
+);
