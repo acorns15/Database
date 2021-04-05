@@ -9,3 +9,5 @@ VALUES (
     'San Juan',
     'D'
 ); /***See note @ value1****/
+
+GO
