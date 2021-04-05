@@ -19,5 +19,8 @@ VALUES (
         'Pasig',
         'C'
     );
+/****Note that i did not include the CustID number because if the "IDENTITY" Function upon creating the table 1****/
+/**** This also apply to Table2*****/
+
 
 GO
