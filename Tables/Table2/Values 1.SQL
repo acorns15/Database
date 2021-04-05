@@ -14,3 +14,5 @@ VALUES (
         420000,
         60000
     );
+/****See note from table1 for explanation***/    
+GO
