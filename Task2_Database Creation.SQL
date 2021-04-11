@@ -65,7 +65,7 @@ VALUES (
         40000
     ),
     (
-        420000,
+        4200000,
         60000
     );
 /****See note from table1 for explanation***/    
