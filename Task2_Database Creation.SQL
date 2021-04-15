@@ -1,5 +1,5 @@
 CREATE TABLE Table1 (
-    CustID1 INT NOT NULL /*****IDENTITY (1,1)*****//*IDENTITY (Initial Value, Increment Value)*//*****IDENTITY function is to automate the interger values without inserting values. It generates values based on initial value and step(increment) value *****/,
+    CustID1 INT NOT NULL IDENTITY (1,1)/*IDENTITY (Initial Value, Increment Value)*//*****IDENTITY function is to automate the interger values without inserting values. It generates values based on initial value and step(increment) value *****/,
     Name VARCHAR(100),
     City VARCHAR(100),
     Type CHAR (10),
@@ -39,7 +39,7 @@ GO
 /*********************************************************************************************************************/
 
 CREATE TABLE Table2 (
-    CustID2 INT NOT NULL /*****IDENTITY (1,1)*****//****See Note in table1***/,
+    CustID2 INT NOT NULL IDENTITY (1,1)/****See Note in table1***/,
     Monthly_Sales Money/***You can also use the Decimal****/,
     Sales_Discount Money/***Open the link README for more information****/,
     CONSTRAINT PK_Table2 PRIMARY KEY (CustID2),
