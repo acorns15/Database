@@ -1,0 +1,3 @@
+CREATE DATABASE DB_Orders_MB;
+
+GO
