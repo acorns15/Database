@@ -5,7 +5,9 @@ CREATE TABLE Orders (
     SalesPrice MONEY, 
     Quantity INT NOT NULL,
     UnitPrice MONEY,
-    SalesAmount MONEY,
+    TotalSales AS (SalesPrice * Quantity),
+    CostOfGoodsSold AS (Quantity * UnitPrice),
+    GrossProfit AS (TotalSales - CostOfGoodsSold)
 
     CONSTRAINT PK_OrderID PRIMARY KEY (OrderID)
 );
