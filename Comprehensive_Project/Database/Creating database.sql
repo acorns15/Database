@@ -1,3 +1,3 @@
-CREATE DATABASE DB_Orders_MB;
+CREATE DATABASE student47_DB_Orders_MB;
 
 GO
