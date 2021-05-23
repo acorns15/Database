@@ -4,8 +4,6 @@ CREATE TABLE Customers (
     Address VARCHAR(100),
     Contact_Number VARCHAR(100),
 
-    CONSTRAINT PK_CustomerID PRIMARY KEY (CustomerID),
-    CONSTRAINT FK_CustomerID FOREIGN KEY (CustomerID)
-        REFERENCES Orders(CustomerID)
+    CONSTRAINT PK_CustomerID PRIMARY KEY (CustomerID)
 );
 GO

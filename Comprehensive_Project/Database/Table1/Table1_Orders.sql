@@ -4,10 +4,11 @@ CREATE TABLE Orders (
     ProductID INT NOT NULL,
     SalesPrice MONEY, 
     Quantity INT NOT NULL,
-    UnitPrice MONEY,
-    TotalSales AS (SalesPrice * Quantity),
-    CostOfGoodsSold AS (Quantity * UnitPrice),
-    GrossProfit AS (TotalSales - CostOfGoodsSold)
+    TotalSales AS (SalesPrice * Quantity)
 
-    CONSTRAINT PK_OrderID PRIMARY KEY (OrderID)
+    CONSTRAINT PK_OrderID PRIMARY KEY (OrderID),
+    CONSTRAINT FK_ProductID_Orders FOREIGN KEY (ProductID)
+        REFERENCES Products(ProductID),
+    CONSTRAINT FK_CustomerID_Orders FOREIGN KEY (CustomerID)
+        REFERENCES Customers(CustomerID)
 );
